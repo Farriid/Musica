@@ -1,0 +1,56 @@
+
+body{
+    background-image: url(../img/todofondos-4KparaPC14.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.main-container{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:20%;
+}
+.controls{
+    width: 30%;
+    padding: 1em;
+    background-color:peru;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+   
+}
+.cover{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 1em;
+}
+.cover img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation-name: girar;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+    animation-duration: 3s;
+}
+.titulo{
+    font-size: 17px;
+}
+.controls button{
+    border-radius: 5px;
+}
+@keyframes girar{
+    from{
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
